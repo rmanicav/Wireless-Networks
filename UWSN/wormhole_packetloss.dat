@@ -1,0 +1,8 @@
+set label 'VBF - Wormhole attack to show packet loss' at 600, 80
+set xlabel 'Simulation Time [msecs]'
+set ylabel 'Packet Delivery Ratio %'
+set grid 
+set xrange [0:1600]
+set yrange [0:100]
+set key at 1600, 60
+plot 'wormhole_packetloss.txt' using 1:2 with linespoints title 'Attack Mode', 'wormhole_packetloss.txt' using 3:4 with linespoints title 'Normal Mode' 

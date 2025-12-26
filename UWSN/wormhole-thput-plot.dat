@@ -1,0 +1,10 @@
+set label 'VBF - Wormhole attack to show Throughput' at 600, 490
+set xlabel 'Simulation Time [msec]'
+set ylabel 'Throughput [kbps]'
+set grid 
+set xrange [0:1600]
+set yrange [0:500]
+set key at 1600,460
+plot 'wormholetput.txt' using 1:2 with linespoints title 'Attack Mode', 'wormholetput.txt' using 3:4 with linespoints title 'Normal Mode' 
+
+
